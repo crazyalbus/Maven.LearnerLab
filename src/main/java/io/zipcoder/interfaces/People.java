@@ -3,7 +3,7 @@ package io.zipcoder.interfaces;
 import java.util.ArrayList;
 
 public class People {
-    ArrayList<Person> personList;
+    private ArrayList<Person> personList;
 
     public People() {
         personList = new ArrayList<Person>();
