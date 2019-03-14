@@ -11,8 +11,8 @@ public class TestZipCodeWilmington {
 
         //Given
         Students studentList = Students.getInstance();
-        Student kate = new Student((long) 1001);
-        Student thao = new Student((long) 1002);
+        Student kate = new Student((long) 1001, "Kate");
+        Student thao = new Student((long) 1002, "Neela");
         studentList.add(kate);
         studentList.add(thao);
         Instructors instructorlist = Instructors.getInstance();
@@ -35,8 +35,8 @@ public class TestZipCodeWilmington {
 
         //Given
         Students studentList = Students.getInstance();
-        Student kate = new Student((long) 1001);
-        Student thao = new Student((long) 1002);
+        Student kate = new Student((long) 1001, "Kate");
+        Student thao = new Student((long) 1002, "Neela");
         studentList.add(kate);
         studentList.add(thao);
         Instructors instructorlist = Instructors.getInstance();

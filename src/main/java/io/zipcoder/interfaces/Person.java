@@ -9,6 +9,12 @@ public class Person {
         this.id = id;
     }
 
+//    Leon set up this constructor...
+    public Person(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public long getId() {
         return id;
     }

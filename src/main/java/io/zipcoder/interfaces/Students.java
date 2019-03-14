@@ -7,14 +7,13 @@ public final class Students extends People<Student>{
     private Students() {
     }
 
+
     public static Students getInstance() {
         return INSTANCE;
     }
 
     public Student[] getArray() {
 
-        Student[] studentArray = personList.toArray(new Student[personList.size()]);
-
-        return studentArray;
+        return  super.personList.toArray(new Student[personList.size()]);
     }
 }

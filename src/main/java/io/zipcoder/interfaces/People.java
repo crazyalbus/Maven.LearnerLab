@@ -13,15 +13,14 @@ public abstract class People<TypeOfPerson extends Person> {
         personList.add(person);
     }
 
-    public TypeOfPerson findById(long id) {
-        TypeOfPerson returnPerson = null;
+    public TypeOfPerson findById(long id) { //changed per leon's lecture
         for (TypeOfPerson person: personList
              ) {
             if(person.getId() == id) {
-                returnPerson = person;
+                return person;
             }
         }
-        return returnPerson;
+        return null;
     }
 
     public void removeByPerson(TypeOfPerson person) {
